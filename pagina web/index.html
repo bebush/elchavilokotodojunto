@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Carousel CSS</title>
+
+</head>
+<body>
+
+<div class="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item" style="background-color: #1abc9c;"><img src="https://imgs.search.brave.com/jcbsxkr0RcE092JUE-gMm2kfELkIi_fBCga1ATWaZew/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGl2aW5hY29jaW5h/LmVzL3dwLWNvbnRl/bnQvdXBsb2Fkcy9j/YWx6b25lLW1pbmku/anBn" alt=""></div>
+    <div class="carousel-item" style="background-color: #3498db;"><img src="https://imgs.search.brave.com/FMpr5jbKKEhMaCTJTy2B8gUVuucXjriz0WTxodHRNHE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9nYnBy/b2RzdG9yYWdlLmJs/b2IuY29yZS53aW5k/b3dzLm5ldC9maWxl/cy9zdHlsZXMvcmVs/YXRlZF9yZWNpcGVz/X2Jsb2NrX2ltYWdl/cy93aW5kb3dzYXp1/cmVzdG9yYWdlL3Jl/Y2lwZXMvMTU0MDE4/MDg0NWVmNzEzYWQ1/ODA2ZTVjMDIzOGQ0/NWFiY2NiNWJhODJh/LnBuZz9oPTI4OTk3/NmZk" alt=""></div>
+    <div class="carousel-item" style="background-color: #9b59b6;"><img src="https://imgs.search.brave.com/E8z53gZ-H0ZZqUm3XI-hgBm-UXPJsy1wnZEySwum-94/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zMi5h/YmNzdGF0aWNzLmNv/bS9hYmMvd3d3L211/bHRpbWVkaWEvZ2Fz/dHJvbm9taWEvMjAy/My8wOS8yMS9oYW1i/dXJndWVzYS1wb2xs/by1oYXJkLXJvY2st/VTQ3NTM2Nzg4NjQz/dFh4LTYyNHgzNTBA/YWJjLmpwZw" alt=""></div>
+    <div class="carousel-item" style="background-color: #9b59b6;"><img src="https://imgs.search.brave.com/3Aa5BetbnJNtiNxOgM2nhSxw-x2c5wqHWnxJie2hxoY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2xhcmluLmNvbS9p/bWcvMjAyMS8wOS8w/Ni9aVVpibkFaTllf/MTI1Nng2MjBfXzIu/anBnIzE2NTQ5MDY3/NjQzNTI" alt=""></div>
+    <!-- Agrega más slides según sea necesario -->
+  </div>
+  <p class="carousel-description"></p>
+  <button class="carousel-prev">Prev</button>
+  <button class="carousel-next">Next</button>
+</div>
+
+<script>
+  const carousel = document.querySelector('.carousel');
+  const carouselInner = carousel.querySelector('.carousel-inner');
+  const prevButton = carousel.querySelector('.carousel-prev');
+  const nextButton = carousel.querySelector('.carousel-next');
+  const description = carousel.querySelector('.carousel-description');
+  const items = Array.from(carouselInner.children);
+  let currentIndex = 0;
+
+  function goToSlide(index) {
+    currentIndex = index;
+    const offset = -currentIndex * carousel.clientWidth;
+    carouselInner.style.transform = `translateX(${offset}px)`;
+    // Actualizar la descripción
+    //description.textContent = `Descripción del Slide ${currentIndex + 1}`;//
+    if(currentIndex == 0){
+        description.textContent = `Empanada`
+    }
+    if(currentIndex == 1){
+        description.textContent = `Pizza`
+    }
+    if(currentIndex == 2){
+        description.textContent = `Burgesa`
+    }
+    if(currentIndex == 3){
+        description.textContent = `Familiar`
+    }
+    
+    
+  }
+
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    goToSlide(currentIndex);
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % items.length;
+    goToSlide(currentIndex);
+  });
+
+
+  // Mostrar la descripción del primer slide al cargar la página
+  goToSlide(currentIndex);
+</script>
+
+</body>
+</html>
