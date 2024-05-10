@@ -1,12 +1,66 @@
 *{
     padding: 0;
     margin: 0;
-}
-body {
+  }
+  body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
+   /* Indice*/
+ 
+   .indice{
+    top: 0;
+    width: 100%;
+    height: 18vh;
+    background-color: rgba(66, 66, 169,0);
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 10vh;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    border-radius: 0px 0px 60px 60px;
+    z-index: 20;
+    color: white;
+}
+.in-carta{
+    color: beige;
+}
+
+.in-logo{   
+    height: 10vh;
+}
+
+.in-carrito{   
+    height: 10vh;   
+}
+
+
+h1{
+  text-align: center; 
+  z-index: 19;
+  top: 80px;  
+  position: relative;
+}
+
+
+.car{
+    height: 100vh;
+    margin-top: -10vh;
+    
+}
+.img-car{
+    height: 100vh;
+    width: 100vw;
+} 
+#a1{
+    height: 105vh;
+    width: 105vw;
+}
+ 
+
+  /* Indice*/
   .carousel {
     width: 100%;
     overflow: hidden;
@@ -45,7 +99,11 @@ body {
   .carousel-next {
     right: 0;
   }
-  img{
+  .carousel-item{
+    height: 100vh;
+    width: 100vw;
+  }
+  .imganes-carrucel{
     height: 100vh;
     width: 100vw;
   }
