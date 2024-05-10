@@ -8,3 +8,14 @@ todo junto
 
 ---parte de compra y venta---(intentar funcionar con mercado pago)
 esto tiene que realizar un QR y una comanda explicando todo lo q se pidio mas los datos del cliente ---tomar como referencia Manjares y Jama.
+
+
+
+
+ver como vender paginas , dominios , servidores
+
+
+
+
+///// MAÑANA //// 
+bajar el titulo y poner las descripciones. 
