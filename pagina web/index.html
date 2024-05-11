@@ -25,7 +25,10 @@
     <div class="carousel-item" style="background-color: #9b59b6;"><img src="https://imgs.search.brave.com/3Aa5BetbnJNtiNxOgM2nhSxw-x2c5wqHWnxJie2hxoY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2xhcmluLmNvbS9p/bWcvMjAyMS8wOS8w/Ni9aVVpibkFaTllf/MTI1Nng2MjBfXzIu/anBnIzE2NTQ5MDY3/NjQzNTI" alt="" class="imganes-carrucel"></div>
     <!-- Agrega más slides según sea necesario -->
   </div>
-  <p class="carousel-description"></p>
+  <h1 class="car-promo"></h1>
+  <h2 class="car-promo-nombre"></h2>
+  <h4 class="car-promo-descripcion"></h4>
+
   <button class="carousel-prev">Prev</button>
   <button class="carousel-next">Next</button>
 </div>
@@ -35,7 +38,9 @@
   const carouselInner = carousel.querySelector('.carousel-inner');
   const prevButton = carousel.querySelector('.carousel-prev');
   const nextButton = carousel.querySelector('.carousel-next');
-  const description = carousel.querySelector('.carousel-description');
+  const description = carousel.querySelector('.car-promo');
+  const promoNombre = carousel.querySelector(".car-promo-nombre")
+  const promoDescripcion = carousel.querySelector('.car-promo-descripcion')
   const items = Array.from(carouselInner.children);
   let currentIndex = 0;
 
@@ -47,15 +52,23 @@
     //description.textContent = `Descripción del Slide ${currentIndex + 1}`;//
     if(currentIndex == 0){
         description.textContent = `Empanada`
+        promoNombre.textContent = '#1 dos empanadas a  45$'
+        promoDescripcion.textContent ='(carne,pollo,JyQ,cebolla)'
     }
     if(currentIndex == 1){
         description.textContent = `Pizza`
+        promoNombre.textContent = '#2 dos Pizzas a elecion 50$'
+        promoDescripcion.textContent ='(fugazza,peperoni,4 quesos)'
     }
     if(currentIndex == 2){
         description.textContent = `Burgesa`
+        promoNombre.textContent = '#3 cuatro burgesas con papas a  60$'
+        promoDescripcion.textContent ='(lechuga,tomate,mayo,jamon,queso)'
     }
     if(currentIndex == 3){
         description.textContent = `Familiar`
+        promoNombre.textContent = '#4 dos familiares a  45$'
+        promoDescripcion.textContent ='(lechuga,tomate,mayo,jamon,queso)'
     }
     
     
