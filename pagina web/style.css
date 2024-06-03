@@ -139,19 +139,63 @@ h1{
 
   /* ------- Carta  --------- */
 .carta-main{
+  display: grid;
+  grid-template-columns: 20% 80%;
   height: 100vh;
   width: 100vw;
-  background: 
-        linear-gradient(rgba(80, 80, 80, 0.4), rgba(82, 82, 82, 0.4)), /* Superposición blanca semitransparente */
-        url("https://images3.alphacoders.com/134/thumb-1920-1342988.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;      
+ background-color: grey;     
+}
+
+.lista{
+  background-color: white;
+  grid-column: 2/2;
+  grid-row: 1/6;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  overflow: scroll;
+  z-index: 1;
+  border-radius: 0px 0% 0% 15px;
+}
+.lista-items{
+  width: 80px;
+  height: 80px;
+  background-color: grey;
+  margin: 10px;
+ 
+}
+.lista-items img{
+  width: 100%;
+  height: 90%;
 }
 
 
 
- /* ------- Carta  --------- */
+.section-inactive{
+  background-color: gray;
+  text-align: center;
+}
+.section-active{
+  background-color: white;
+  border-radius: 15% 0% 0% 15%;
+  text-align: center;
+  box-shadow: -25px 10px 50px rgb(0, 0, 0);
+  z-index: 1;
+}
+
+.section-active p{
+  pointer-events: none;
+  position: relative;
+  top: 40%;
+  
+}
+.section-inactive p{
+  pointer-events: none; 
+  position: relative;
+  top: 40%;
+}
+
+
+ /* ------- Sobre nosotros  --------- */
  .sn-main{
   height: 100vh;
   width: 100vw;
@@ -162,4 +206,3 @@ h1{
   background-position: center;
   background-repeat: no-repeat;      
 }
-
