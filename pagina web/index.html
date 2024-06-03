@@ -45,13 +45,20 @@
   <div class="seccion4"><p>familiares</p></div>
   <div class="seccion5"><p>lo mas vendidos</p></div>
   <div class="lista" id="lista">
-    <div class="lista-items" id="papa"><img src="https://imgs.search.brave.com/9JvgTPmvbM0bw7tm1BB8QFzYhPrcLDyMFBQ1Y_8cOIQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5hbWJpdG8uY29t/L3AvZmU3ZWU4YzZj/YTg0NDk2Njk4Nzhh/NjgwYjk3YjIzYmYv/YWRqdW50b3MvMjM5/L2ltYWdlbmVzLzAz/OS8yNzAvMDAzOTI3/MDI3NS9wYXBhcy1m/cml0YXNqcGcuanBn/PzAwMDAtMDAtMDAt/MDAtMDAtMDA" alt=""></div>
-    <div class="lista-items" id="manzana"><img src="" alt=""></div>
-    <div class="lista-items" id="latigo"><img src="" alt=""></div>
-    <div class="lista-items" id="campera"><img src="https://imgs.search.brave.com/seX_C7FHgtZ6EmQiTFnfoW4w571vbdcJwU-C004ESZA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9icmln/YW50aS5jb20uYXIv/Y2RuL3Nob3AvZmls/ZXMvSElDUDA5NTcx/MDkxLTAxXzU0MHgu/anBnP3Y9MTcwODEx/MDM3MA" alt=""></div>
-    <div class="lista-items" id="pc"><img src="https://imgs.search.brave.com/6C8uFlbejvECbEapj_QwMKdZMrhaoZk9OZOx-GIZwWY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/YXJteXRlY2guY29t/LmFyL0ltYWdlLzAv/NDUwXzQ1MC1HQU1F/UiUyMEtJVDcuanBn" alt=""></div>
-    <div class="lista-items" id="ajo"><p>ajo</p></div>
-
+    <div class="lista-items" id="papa">
+      <img src="https://imgs.search.brave.com/9JvgTPmvbM0bw7tm1BB8QFzYhPrcLDyMFBQ1Y_8cOIQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5hbWJpdG8uY29t/L3AvZmU3ZWU4YzZj/YTg0NDk2Njk4Nzhh/NjgwYjk3YjIzYmYv/YWRqdW50b3MvMjM5/L2ltYWdlbmVzLzAz/OS8yNzAvMDAzOTI3/MDI3NS9wYXBhcy1m/cml0YXNqcGcuanBn/PzAwMDAtMDAtMDAt/MDAtMDAtMDA" alt="">
+      <div>
+        <h4>PAPAS FRITAS A LA CREMA</h4>
+        <p>$100</p>
+      </div>
+    
+    </div>
+    <div class="lista-items" id="manzana"></div>
+    <div class="lista-items" id="latigo"><p>latigo</p></div>
+    <div class="lista-items" id="campera"><p>campera</p></div>
+    <div class="lista-items" id="pc"><p>pc</p></div>
+    <div class="lista-items" id="ajo"><p>ajo</p></div>   
+      
   </div>
 
    
@@ -148,20 +155,31 @@
     // Crear el contenido según la sección activa
     if (event.target.classList.contains('seccion1')) {
       listaDiv.style.borderRadius = '0px 0% 0% 15px';
-      listaDiv.innerHTML = `
-    <div class="lista-items" id="papa"><img src="https://imgs.search.brave.com/9JvgTPmvbM0bw7tm1BB8QFzYhPrcLDyMFBQ1Y_8cOIQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5hbWJpdG8uY29t/L3AvZmU3ZWU4YzZj/YTg0NDk2Njk4Nzhh/NjgwYjk3YjIzYmYv/YWRqdW50b3MvMjM5/L2ltYWdlbmVzLzAz/OS8yNzAvMDAzOTI3/MDI3NS9wYXBhcy1m/cml0YXNqcGcuanBn/PzAwMDAtMDAtMDAt/MDAtMDAtMDA" alt=""></div>
+      listaDiv.innerHTML = ` 
+      <div class="lista-items" id="papa">
+        <img src="https://imgs.search.brave.com/9JvgTPmvbM0bw7tm1BB8QFzYhPrcLDyMFBQ1Y_8cOIQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5hbWJpdG8uY29t/L3AvZmU3ZWU4YzZj/YTg0NDk2Njk4Nzhh/NjgwYjk3YjIzYmYv/YWRqdW50b3MvMjM5/L2ltYWdlbmVzLzAz/OS8yNzAvMDAzOTI3/MDI3NS9wYXBhcy1m/cml0YXNqcGcuanBn/PzAwMDAtMDAtMDAt/MDAtMDAtMDA" alt="">
+        <div>
+          <h4>PAPAS FRITAS A LA CREMA</h4>
+          <p>$100</p>
+        </div>
+    </div>
     <div class="lista-items" id="manzana"></div>
     <div class="lista-items" id="latigo"><p>latigo</p></div>
     <div class="lista-items" id="campera"><p>campera</p></div>
     <div class="lista-items" id="pc"><p>pc</p></div>
-    <div class="lista-items" id="ajo"><p>ajo</p></div>   
-      `;
+    <div class="lista-items" id="ajo"><p>ajo</p></div>    `;
       
     } else if (event.target.classList.contains('seccion2')) {
       listaDiv.style.borderRadius = '15px 0% 0% 15px';
       listaDiv.innerHTML = `
     <div class="lista-items" id="papa">papa</div>
-    <div class="lista-items" id="manzana"><img src="https://imgs.search.brave.com/sB2XgwYg8KN_zowMZGutIS_Bx9WNwbGFxe2RSjipkec/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTg0/Mjc2ODE4L2VzL2Zv/dG8vbWFuemFuYS1y/ZWQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPUJGRDhpeEQ3/ZXlYTW0zYVNWSWR6/MWhVc0xHLWxYOEln/MkhCcjZJVkp1elU9" alt="manzana"></div>
+    <div class="lista-items" id="manzana">
+      <img src="https://imgs.search.brave.com/sB2XgwYg8KN_zowMZGutIS_Bx9WNwbGFxe2RSjipkec/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTg0/Mjc2ODE4L2VzL2Zv/dG8vbWFuemFuYS1y/ZWQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPUJGRDhpeEQ3/ZXlYTW0zYVNWSWR6/MWhVc0xHLWxYOEln/MkhCcjZJVkp1elU9" alt="manzana">
+      <div>
+          <h4>MANZANAS RICAS</h4>
+          <p>$200</p>
+        </div>
+    </div>
     <div class="lista-items" id="latigo"><p>latigo</p></div>
     <div class="lista-items" id="campera"><p>campera</p></div>
     <div class="lista-items" id="pc"><p>pc</p></div>
