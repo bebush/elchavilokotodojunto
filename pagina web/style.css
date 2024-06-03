@@ -154,8 +154,10 @@ h1{
   grid-template-columns: 20% 80%;
   height: 90vh;
   width: 100vw;
-  scroll-margin-top: 10vh;
+  scroll-margin-top: 9.899vh;
   background-color: gray;
+  
+
 }
 
 .lista{
@@ -167,6 +169,7 @@ h1{
   overflow: scroll;
   z-index: 1;
   border-radius: 0px 0% 0% 15px;
+  overflow-x: hidden;
 }
 .lista-items{
   width: 80%;
