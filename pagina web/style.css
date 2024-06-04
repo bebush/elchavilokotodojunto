@@ -182,6 +182,8 @@ h1{
   
   margin-top:20% ;
   margin-bottom: 20%;
+
+  
   
 }
 .lista-items img{
@@ -217,9 +219,17 @@ h1{
   position: relative;
   top: 40%;
 }
-.carta-boton{
-  position: relative;
-  bottom: unset;
+.carta-boton button{
+  height: 50px;
+  width: 50px;
+  margin-left: 85%;
+  border-radius: 100%;
+  background-color: brown;
+  border: 2px solid;
+}
+.carta-boton button img{
+  height: 40px;
+  width: 40px;
 }
 
  /* ------- Sobre nosotros  --------- */
