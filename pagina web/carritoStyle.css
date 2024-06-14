@@ -11,3 +11,48 @@
 .volver-index {
     margin: 20px;
 }
+#btnEnviarWhatsApp {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnEnviarWhatsApp:hover {
+    background-color: #128C7E; /* Cambio de color al hacer hover */
+}
+
+/* Estilos para el contenedor del carrito */
+.carrito {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px; /* Ajusta el ancho máximo según sea necesario */
+    overflow-y: auto; /* Agrega scroll si el contenido es demasiado largo */
+}
+
+.carrito p {
+    margin: 5px 0;
+}
+
+.carrito button {
+    background-color: #dc3545; /* Color rojo */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carrito button:hover {
+    background-color: #c82333; /* Cambio de color al hacer hover */
+}

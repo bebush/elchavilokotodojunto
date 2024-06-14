@@ -10,7 +10,7 @@ function agregarAlCarrito(nombre, precio) {
 
 function mostrarCarrito() {
     const carritoDiv = document.getElementById('carrito');
-    if (!carritoDiv) return; // Si no estamos en la página del carrito, no hacemos nada.
+    if (!carritoDiv) return; // Verifica que #carrito esté presente en tu HTML
     carritoDiv.innerHTML = '';
     let total = 0;
 
@@ -37,6 +37,35 @@ function actualizarContadorCarrito() {
     }
 }
 
+function enviarPorWhatsApp() {
+    let mensaje = '¡Hola! Aquí está tu pedido:\n';
+
+    // Agregar cada producto al mensaje
+    carrito.forEach((producto) => {
+        mensaje += `${producto.nombre} - $${producto.precio.toFixed(2)}\n`;
+    });
+
+    // Agregar el total al mensaje
+    let total = carrito.reduce((acc, producto) => acc + producto.precio, 0);
+    mensaje += `Total: $${total.toFixed(2)}`;
+
+    // Codificar el mensaje para usarlo en el enlace de WhatsApp
+    let mensajeCodificado = encodeURIComponent(mensaje);
+
+    // Crear el enlace de WhatsApp con el mensaje predefinido
+    let enlaceWhatsApp = `https://wa.me/3496540915?text=${mensajeCodificado}`;
+
+    // Abrir la ventana de WhatsApp en una nueva pestaña
+    window.open(enlaceWhatsApp, '_blank');
+}
+
+// Asignar la función enviarPorWhatsApp al botón correspondiente
+const btnEnviarWhatsApp = document.getElementById('btnEnviarWhatsApp');
+if (btnEnviarWhatsApp) {
+    btnEnviarWhatsApp.addEventListener('click', enviarPorWhatsApp);
+}
+
+// Ejecutar al cargar la página
 window.onload = () => {
     actualizarContadorCarrito();
     mostrarCarrito();
