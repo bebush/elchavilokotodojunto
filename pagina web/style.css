@@ -1,307 +1,303 @@
 *{
-    padding: 0;
-    margin: 0;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  html, body {
-    overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
-   /* Indice*/
- 
-   .indice{
-    top: 0;
-    width: 100%;
-    height: 18vh;
-    background-color: rgba(66, 66, 169,0);
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 10vh;
-    justify-items: center;
-    align-items: center;
-    position: fixed;
-    border-radius: 0px 0px 60px 60px;
-    z-index: 20;
-    color: white;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  overflow-x: hidden;
+}
+ /* Indice*/
+
+ .indice{
+  top: 0;
+  width: 100%;
+  height: 18vh;
+  background-color: rgba(66, 66, 169,0);
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: 10vh;
+  justify-items: center;
+  align-items: center;
+  position: fixed;
+  border-radius: 0px 0px 60px 60px;
+  z-index: 20;
+  color: white;
 }
 .in-carta{
-    color: beige;
+  color: beige;
 }
 
 .in-logo{   
-    height: 10vh;
+  height: 10vh;
 }
 
 .in-carrito{   
-    height: 10vh;   
+  height: 10vh;   
 }
 
 
 h1{
-  text-align: center; 
-  z-index: 19;
-  top: 80px;  
-  position: relative;
+text-align: center; 
+z-index: 19;
+top: 80px;  
+position: relative;
 }
 
 
 .car{
-    height: 100vh;
-    margin-top: -10vh;
-    
-    
+  height: 100vh;
+  margin-top: -10vh;
+  
+  
 }
 .img-car{
-    height: 110vh;
-    width: 100vw;
-    
-    
+  height: 110vh;
+  width: 100vw;
+  
+  
 } 
 #a1{
-    height: 105vh;
-    width: 105vw;
+  height: 105vh;
+  width: 105vw;
 }
- a{
-  text-decoration: none;
+a{
+text-decoration: none;
+color: white;
+}
+
+.in-nosotros a{
+scroll-margin-top: 100px;
+}
+
+/* Indice*/
+.carousel {
+  width: 100%;
+  height: 110vh;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  
+}
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+
+}
+.carousel-item {
+  flex: 0 0 100%; /* Hace que los elementos ocupen todo el ancho */
+  max-width: 100%;
+}
+/* Estilos para los botones de navegación */
+.carousel-prev,
+.carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50vh;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
- }
- 
- .in-nosotros a{
-  scroll-margin-top: 100px;
- }
-
-  /* Indice*/
-  .carousel {
-    width: 100%;
-    height: 110vh;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    
-  }
-  .carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-  
-  }
-  .carousel-item {
-    flex: 0 0 100%; /* Hace que los elementos ocupen todo el ancho */
-    max-width: 100%;
-  }
-  /* Estilos para los botones de navegación */
-  .carousel-prev,
-  .carousel-next {
-    cursor: pointer;
-    position: absolute;
-    top: 50vh;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    border: none;
-    outline: none;
-    transition: background-color 0.3s ease;
-  }
-  .carousel-prev:hover,
-  .carousel-next:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  .carousel-prev {
-    left: 0;
-  }
-  .carousel-next {
-    right: 0;
-  }
-  .carousel-item{
-    height: 110vh;
-    width: 100vw;
-    overflow: hidden;
-   
-  }
-  .imganes-carrucel{
-    height: 110vh;
-    width: 100vw;
-    opacity: 0.55;
-  }
-  .car-promo {
-    
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -0%);
-    margin-top: 18vh;
-    color: rgb(226, 171, 43);
-  }
-  .car-promo-nombre{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -0%);
-    margin-top: 24vh;
-    
-  }
-  .car-promo-descripcion{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -0%);
-    margin-top: 86vh;
-  }
-
-  /* ------- Carta  --------- */
-.carta-main{
- 
-  display: grid;
-  grid-template-columns: 20% 80%;
-  height: 90vh;
+  padding: 10px;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.carousel-prev {
+  left: 0;
+}
+.carousel-next {
+  right: 0;
+}
+.carousel-item{
+  height: 110vh;
   width: 100vw;
-  scroll-margin-top: 9.899vh;
-  background-color: gray;
+  overflow: hidden;
+ 
+}
+.imganes-carrucel{
+  height: 110vh;
+  width: 100vw;
+  opacity: 0.55;
+}
+.car-promo {
   
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  margin-top: 18vh;
+  color: rgb(226, 171, 43);
+}
+.car-promo-nombre{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  margin-top: 24vh;
+  
+}
+.car-promo-descripcion{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  margin-top: 86vh;
+}
+
+/* ------- Carta  --------- */
+.carta-main{
+
+display: grid;
+grid-template-columns: 20% 80%;
+height: 90vh;
+width: 100vw;
+scroll-margin-top: 9.899vh;
+background-color: gray;
+
 
 }
 
 .lista{
-  background-color: white;
-  grid-column: 2/2;
-  grid-row: 1/6;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  overflow: scroll;
-  z-index: 1;
-  border-radius: 0px 0% 0% 15px;
-  overflow-x: hidden;
-  margin-bottom: 2px;
+background-color: white;
+grid-column: 2/2;
+grid-row: 1/6;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+overflow: scroll;
+z-index: 1;
+border-radius: 0px 0% 0% 15px;
+overflow-x: hidden;
+margin-bottom: 2px;
 }
 .lista-items{
-  width: 80%;
-  height: 20rem;
-  background-color: rgb(76, 140, 200);
-  justify-self: center;
- 
-  border-radius: 5% 5% 5% 5%;
-  text-align: center;
-  
-  margin-top:20% ;
-  margin-bottom: 20%;
+width: 80%;
+height: 20rem;
+background-color: rgb(76, 140, 200);
+justify-self: center;
 
-  
-  
+border-radius: 5% 5% 5% 5%;
+text-align: center;
+
+margin-top:20% ;
+margin-bottom: 20%;
+
+
+
 }
 .lista-items img{
-  width: 100%;
-  height: 15rem;
-  border-radius: 5% 5% 10% 10%;
- 
-  
+width: 100%;
+height: 15rem;
+border-radius: 5% 5% 10% 10%;
+
+
 }
 
 
 
 .section-inactive{
-  background-color: gray;
-  text-align: center;
+background-color: gray;
+text-align: center;
 }
 .section-active{
-  background-color: white;
-  border-radius: 15% 0% 0% 15%;
-  text-align: center;
-  box-shadow: -25px 10px 50px rgb(0, 0, 0);
-  z-index: 1;
+background-color: white;
+border-radius: 15% 0% 0% 15%;
+text-align: center;
+box-shadow: -25px 10px 50px rgb(0, 0, 0);
+z-index: 1;
 }
 
 .section-active p{
-  pointer-events: none;
-  position: relative;
-  top: 40%;
-  
+pointer-events: none;
+position: relative;
+top: 40%;
+
 }
 .section-inactive p{
-  pointer-events: none; 
-  position: relative;
-  top: 40%;
+pointer-events: none; 
+position: relative;
+top: 40%;
 }
 .carta-boton button{
-  height: 50px;
-  width: 50px;
-  margin-left: 85%;
-  border-radius: 100%;
-  background-color: brown;
-  border: 2px solid;
-}
-.carta-boton button img{
-  height: 40px;
-  width: 40px;
+height: 50px;
+width: 50px;
+margin-left: 85%;
+border-radius: 100%;
+background-color: brown;
+border: 2px solid;
 }
 
- /* ------- Sobre nosotros  --------- */
- .sn-main{
-  height: 100vh;
-  width: 100vw;
-  background: 
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Superposición blanca semitransparente */
-        url("https://media.istockphoto.com/id/1390809424/es/foto/el-chef-senior-ense%C3%B1a-a-los-estudiantes-de-cocina-a-preparar-masa-de-pasteler%C3%ADa-para-pasteles.jpg?s=1024x1024&w=is&k=20&c=VrXXllZ8Y8-Tl1bvEPyk_1AmNKkxGp1WPa089Hs7Iy4=");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: grid;      
-  grid-template-columns: repeat(2,1fr);
- 
- }
+/* ------- Sobre nosotros  --------- */
+.sn-main{
+height: 100vh;
+width: 100vw;
+background: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Superposición blanca semitransparente */
+      url("https://media.istockphoto.com/id/1390809424/es/foto/el-chef-senior-ense%C3%B1a-a-los-estudiantes-de-cocina-a-preparar-masa-de-pasteler%C3%ADa-para-pasteles.jpg?s=1024x1024&w=is&k=20&c=VrXXllZ8Y8-Tl1bvEPyk_1AmNKkxGp1WPa089Hs7Iy4=");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+overflow: hidden;
+display: grid;      
+grid-template-columns: repeat(2,1fr);
+
+}
 .sn-text{
-  color: white;
-  margin-top: 200px;
-  margin-left: 10%;
+color: white;
+margin-top: 200px;
+margin-left: 10%;
 }
 .sn-text h2{
-  font-size: 40px;
-  text-align: center;
+font-size: 40px;
+text-align: center;
 }
 .sn-text p{
-  font-size: 20px;
-  margin-top: 5%;
+font-size: 20px;
+margin-top: 5%;
 }
 
 /* ------- pie de pagina  --------- */
 
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+background-color: #333;
+color: #fff;
+padding: 10px 0;
+text-align: center;
+font-family: Arial, sans-serif;
+font-size: 14px;
 }
 
 footer p {
-  margin: 5px 0;
+margin: 5px 0;
 }
 
 footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center;
 }
 
 footer ul li {
-  margin-right: 10px;
+margin-right: 10px;
 }
 
 footer ul li:last-child {
-  margin-right: 0;
+margin-right: 0;
 }
 
 footer ul li a {
-  color: #fff;
-  text-decoration: none;
+color: #fff;
+text-decoration: none;
 }
 
 footer ul li a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
